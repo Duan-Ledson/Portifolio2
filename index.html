@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title data-key="site-title">Portfólio - Duan Ledson</title>
+
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- Cabeçalho do site -->
+    <header class="cabecalho">
+        <!-- Logo com link para a seção "home" -->
+        <a href="#home" class="logo">Duan
+            <span data-key="logo-name">Ledson</span>
+        </a>
+        <!-- Ícone de menu para navegação em dispositivos móveis -->
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <!-- Barra de navegação com links para seções da página -->
+        <nav class="barra_de_navegacao" id="barraDeNavegacao">
+            <a href="#home" class="ativar" data-key="nav-home">Home</a>
+            <a href="#about" data-key="nav-about">About</a>
+            <a href="#education" data-key="nav-education">Education</a>
+            <a href="#services" data-key="nav-services">Services</a>
+            <a href="#projects" data-key="nav-projects">Projects</a>
+            <a href="#contact" data-key="nav-contact">Contact</a>
+        </nav>
+        
+        <!-- Seletor de idioma com opções para Inglês, Português e Espanhol -->
+        <div class="language-selector">
+            <select id="language" onchange="changeLanguage(this.value)">
+                <option value="pt" class="flag-pt" data-key="language-pt">Português</option>
+                <option value="en" class="flag-en" data-key="language-en">English</option>
+            </select>
+        </div>
+
+    </header>
+    <!-- Seção Home com introdução e ícones sociais -->
+    <section class="home" id="home">
+        <div class="home-corpo">
+            <h1 data-key="home-title">
+                Hi, it's <span>Duan</span>
+            </h1>
+
+            <h3 class="texto-animado" data-key="home-subtitle">
+                I'm a <span></span>
+            </h3>
+
+            <p data-key="home-description">Hello! My name is Duan Lêdson, a Front-end developer specializing in React, HTML, CSS and JavaScript. I help small businesses and designers put their ideas into practice. Let's talk?</p>
+
+            <!-- Ícones para redes sociais (LinkedIn, GitHub, Instagram) -->
+            <div class="icone-skills">
+                <a href="https://www.linkedin.com/in/duan-lêdson/" target="_blank"><i class='bx bxl-linkedin' data-key="linkedin-icon"></i></a>
+                <a href="https://github.com/Duan-Ledson" target="_blank"><i class='bx bxl-github' data-key="github-icon"></i></a>
+                <a href="https://www.instagram.com/ledsonduan/" target="_blank"><i class='bx bxl-instagram-alt' data-key="instagram-icon"></i></a>
+            </div>
+
+            <!-- Botão para download do currículo -->
+            <div class="grupo-btn">
+                <a href="./curriculo/resume.pdf" target="_blank" class="btn" data-key="download-cv">Download CV</a>
+            </div>
+        </div>
+
+            <!-- Imagem do desenvolvedor -->
+            <div class="img-home">
+                <img src="./img/duan1.jpg" alt="Duan Ledson" data-key="home-image">
+            </div>
+    </section>
+
+    <!-- Seção About com detalhes sobre o desenvolvedor -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="./img/duan.jpg" alt="Duan Ledson" data-key="about-image">
+        </div>
+        <div class="about-corpo">
+            <h2 class="heading" data-key="about-heading">
+                About <span data-key="about-span">Me</span>
+            </h2>
+
+            <h3 data-key="about-title">
+                Web <span data-key="about-span">developer</span>
+            </h3>
+
+            <p data-key="about-description-1">My name is Duan Lêdson and I am passionate about technology. My first contact with programming was in 2022 when I decided to change careers, but it didn't work out very well, despite having liked the area, I only really started my career transition process in 2024, when a friend introduced me to web development.</p>
+
+            <p data-key="about-description-2">Today I understand technologies focused on Front-end. I also like to create designs in Figma, creating interfaces for personal projects and those of friends.</p>
+
+        </div>
+    </section>
+
+    <!-- Seção Education com a linha do tempo da educação -->
+    <section class="education" id="education">
+        <h2 class="heading" data-key="education-heading">Education</h2>
+
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date" data-key="education-highschool-date">2011</div>
+                    <div class="timeline-content">
+                        <h3 data-key="education-highschool-title">High School</h3>
+                        <p data-key="education-highschool-name">CENTRO DE ENSINO ARISTIDES LOBAO</p>
+                        <p data-key="education-highschool-address">Av. Nacor da Costa Ribeiro, Barão de Grajaú - MA.</p>
+                    </div>               
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date" data-key="education-university-date">2012</div>
+                    <div class="timeline-content">
+                        <h3 data-key="education-university-title">University</h3>
+                        <p data-key="education-university-name">INSTITUTO FEDERAL DO PIAUI - CAMPUS FLORIANO</p>
+                        <P data-key="education-university-address">Rua Francisco Urquiza Machado, 462, Bairro Campo Velho</P>
+                    </div>               
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date" data-key="education-bootcamp1-date">2024</div>
+                    <div class="timeline-content">
+                        <h3 data-key="education-bootcamp1-title">Bootcamp</h3>
+                        <p data-key="education-bootcamp1-name">ALURA - ONE: Oracle Next Education</p>
+                        <p data-key="education-bootcamp1-specialization">Especialização Front-End</p>
+                    </div>               
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date" data-key="education-bootcamp2-date">2024</div>
+                    <div class="timeline-content">
+                        <h3 data-key="education-bootcamp2-title">Bootcamp</h3>
+                        <p data-key="education-bootcamp2-name">ADATECH - Ada Skill+</p>
+                        <p data-key="education-bootcamp2-specialization">Front-End em React</p>
+                    </div>               
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date" data-key="education-bootcamp3-date">2024</div>
+                    <div class="timeline-content">
+                        <h3 data-key="education-bootcamp3-title">Bootcamp</h3>
+                        <p data-key="education-bootcamp3-name">DIO.</p>
+                        <p data-key="education-bootcamp3-specialization">GFT Start - Lógica de Programação</p>
+                    </div>               
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Services destacando os serviços oferecidos -->
+    <section class="services" id="services">
+        <h2 class="heading" data-key="services-heading">Services</h2>
+
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <i class='bx bx-code-block'></i>
+                    <h4 data-key="services-title-frontend">FrontEnd Development</h4>
+                    <p data-key="services-description-frontend">
+                        Create and implement the visual interface of a website or application so that users can interact with the application.
+                    </p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <i class='bx bxl-github'></i>
+                    <h4 data-key="services-title-git">Git & GitHub</h4>
+                    <p data-key="services-description-git">
+                        Version control of files that tracks changes and keeps a history of each change. Host projects and allow developers to work together. GitHub uses Git to store and manage code.
+                    </p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <i class='bx bxs-palette'></i>
+                    <h4 data-key="services-title-design">UI / UX Design</h4>
+                    <p data-key="services-description-design">
+                        Understanding user needs and defining product functionality and structure, creating the visual interface that brings the user experience to life. Both aspects of Design are essential to creating high-quality products.
+                    </p>
+                </div>
+            </div>
+            <div class="service-box">
+                <div class="service-info">
+                    <i class='bx bxl-nodejs'></i>
+                    <h4 data-key="services-title-nodejs">Node.js</h4>
+                    <p data-key="services-description-nodejs">
+                        Open source platform that enables the creation of server-side applications and tools in JavaScript. It is built on Google Chrome's V8 engine, which interprets JavaScript.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projects exibindo projetos realizados -->
+    <section class="projects" id="projects">
+        <h2 class="heading" data-key="projects-heading">Projects</h2>
+
+        <div class="projects-container">
+            <div class="project-box">
+            <img src="./img/project1.png" alt="Projeto Um" data-key="project1-image">
+            </div>
+
+            <div class="project-box">
+            <img src="./img/project2.png" alt="Projeto Dois" data-key="project2-image">
+            </div>
+
+            <div class="project-box">
+            <img src="./img/project3.png" alt="Projeto Três" data-key="project3-image">
+            </div>
+
+            <div class="project-box">
+            <img src="./img/project4.png" alt="Projeto Quatro" data-key="project4-image">
+            </div>
+
+            <div class="project-box">
+            <img src="./img/project5.png" alt="Projeto Cinco" data-key="project5-image">
+            </div>
+
+            <div class="project-box">
+            <img src="./img/coming-soon.jpg" alt="Coming Soon" data-key="project-comingsoon-image">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Seção Contact com formulário de contato -->
+    <section class="contact" id="contact">
+        <h2 class="heading" data-key="contact-heading">Contact <span data-key="contact-span">Me</span></h2>
+    
+        <form id="contact-form">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" id="name" placeholder="Name" required data-key="contact-input-name">
+                    <input type="email" id="email" placeholder="E-mail" required data-key="contact-input-email">
+                </div>
+    
+                <div class="input-box">
+                    <input type="number" id="phone" placeholder="Phone Number" required data-key="contact-input-phone">
+                    <input type="text" id="subject" placeholder="Subject" required data-key="contact-input-subject">
+                </div>
+            </div>
+            <div class="input-group-2">
+                <textarea id="message" cols="30" rows="10" placeholder="Your Message" required data-key="contact-input-message"></textarea>
+    
+                <input type="submit" value="Send Message" class="btn" data-key="contact-button-send">
+            </div>
+        </form>
+    </section>   
+
+    <!-- Rodapé com direitos autorais -->
+    <footer class="footer">
+        <p class="copyright" data-key="footer-text">
+            © Duan Ledson | All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
